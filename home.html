@@ -99,14 +99,14 @@
             //     alert("current user absent")
             // }
 
-            var jwellerydiv = document.getElementById("products");
+            var productdiv = document.getElementById("products");
             var finaldata = "";
-            var jwelleryfromls = JSON.parse(localStorage.getItem("Products"));
-            for (var i = 0; i < jwelleryfromls.length; i++) {
-                finaldata += `<div onclick='redirect(${JSON.stringify(jwelleryfromls[i])})' id="singlepro"><img src=${jwelleryfromls[i].proImage} /> <h1>${jwelleryfromls[i].proName}</h1> <p>${jwelleryfromls[i].proPrice}</p></div>`
+            var  productfromls = JSON.parse(localStorage.getItem("Products"));
+            for (var i = 0; i < productfromls.length; i++) {
+                finaldata += `<div onclick='redirect(${JSON.stringify( productfromls[i])})' id="singlepro"><img src=${ productfromls[i].proImage} /> <h1>${ productfromls[i].proName}</h1> <p>${ productfromls[i].proPrice}</p></div>`
             }
             console.log(finaldata, "finaldta here");
-            jwellerydiv.innerHTML = finaldata;
+            productdiv.innerHTML = finaldata;
         }
         function redirect(product) {
             var singleProduct = JSON.stringify(product);

@@ -10,11 +10,11 @@
     <form onsubmit="addRingProduct(event)">
 
         <label>Product Image url</label><br />
-        <input type="text" id="ringimage" /><br />
+        <input type="text" id="pimage" /><br />
         <label>Product Name</label><br />
-        <input type="text" id="ringname" /><br />
+        <input type="text" id="pname" /><br />
         <label>Product Price</label><br />
-        <input type="text" id="ringprice" /><br />
+        <input type="text" id="pprice" /><br />
 
       
 
@@ -25,9 +25,9 @@
     <script>
         function addRingProduct(event){
             event.preventDefault();
-            var proImage = document.getElementById("ringimage").value;
-            var proName = document.getElementById("ringname").value;
-            var proPrice = document.getElementById("ringprice").value;
+            var proImage = document.getElementById("pimage").value;
+            var proName = document.getElementById("pname").value;
+            var proPrice = document.getElementById("pprice").value;
            
 
             var product = {proImage, proName ,proPrice};
