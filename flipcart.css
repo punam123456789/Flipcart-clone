@@ -10,13 +10,16 @@ nav{
     height: 55px;
 }
 nav .logo img{
-    margin-left: 44%;
-    margin-top: 5%;
-    width: 30%;
+    margin-left: 56%;
+    margin-top: 2%;
+    width: 31%;
 }
 .logo p{
-    margin-left: 44%;
+    margin-left: 56%;
 
+}
+.logo p span{
+    color: rgb(255, 191, 0);
 }
 nav input{
     width: 30%;
@@ -36,8 +39,25 @@ nav i{
 }
 ul{
     display: flex;
+    justify-content: center;
+    justify-content: space-around;
     list-style: none;
+    margin-top: 18px;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 22px;
 }
 ul li a{
-    mar
+    margin-inline: 25px;
+    font-size: 18px;
+    list-style: none;
+   
+}
+img{
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
 }
