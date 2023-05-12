@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <script src="https://kit.fontawesome.com/4781840b9b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./flipcart.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./flipcart.css">
-    <title>Single Product</title>
-
+    <title>Document</title>
 </head>
-
 <body>
     <nav>
         <div class="logo">
-            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
-                alt="">
+            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="">
             <p>Flipcart <span>Plus</span></p>
 
         </div>
         <input type="text" placeholder="Search product & more.">
         <i class="fa-solid fa-magnifying-glass"></i>
-
 
         <div class="nav-info">
             <div id="switch">
@@ -47,7 +43,6 @@
             <div id="logout"></div>
         </div>
 
-
     </nav>
 
     <ul>
@@ -63,11 +58,9 @@
             <a>Appliences<i class="fa-solid fa-chevron-down"></i></a>
         </li>
     </ul>
-
-    <img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/1176cec8a9974c97.jpg?q=50" alt="">
     <div class="Container">
-        <div id="products"></div>
-
+      
+        <div id="singleProduct"></div>
 
         <!-- <div class="card">
             <img src="" alt="">
@@ -77,10 +70,11 @@
         </div> -->
 
     </div>
+
     <script>
         window.onload = function () {
-            // alert("working")
-            var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"))
+             // alert("working")
+             var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"))
             // console.log(currentUser,"current user");
             if (!!currentUser) {
                 // alert(currenUser,"username")
@@ -88,9 +82,10 @@
                 var divfromHtml = document.getElementById("switch");
                 // console.log(divfromHtml, "divfromhtml");
                 // var h1=document.createElement("h1");
-
+                
                 // divfromHtml.append(h1)
-                var button = '<button onclick="logout()">Logout</button>'
+                // var button = '<button onclick="logout()">Logout</button>'
+                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()" class="logout-button-txt">Logout</button></span>'
                 var name = `<h1>${currentUser.userName}</h1>`;
                 divfromHtml.innerHTML = name;
                 logoutDiv.innerHTML = button;
@@ -99,28 +94,47 @@
             //     alert("current user absent")
             // }
 
-            var jwellerydiv = document.getElementById("products");
-            var finaldata = "";
-            var jwelleryfromls = JSON.parse(localStorage.getItem("Products"));
-            for (var i = 0; i < jwelleryfromls.length; i++) {
-                finaldata += `<div onclick='redirect(${JSON.stringify(jwelleryfromls[i])})' id="singlepro"><img src=${jwelleryfromls[i].proImage} /> <h1>${jwelleryfromls[i].proName}</h1> <p>${jwelleryfromls[i].proPrice}</p></div>`
+
+            var product = JSON.parse(localStorage.getItem("current-product"));
+
+            var divToAppendProduct = document.getElementById("singleProduct");
+            var structure = `<div id='singlePro'> <img src='${product.proImage}' /> <br/> <h1>${product.proName}</h1><br/> <p>${product.proPrice}</p><br/> <button onclick='addCart(${JSON.stringify(product)})'>Add to cart</button> </div>`
+            console.log(structure, "here");
+            
+            divToAppendProduct.innerHTML = structure;
+        }
+        function addCart(product){
+            alert("Adding to cart")
+            var currentUser=JSON.parse(localStorage.getItem("FlipcartCurrentUser"));
+            var userData=JSON.parse(localStorage.getItem("FlipcartUsers"));
+            var flagforUser=false;
+            for(var i=0;i<userData.length;i++){
+                if(currentUser.userEmail===userData[i].userEmail)
+                {
+                    if(userData[i].cartProducts==undefined)
+                    {
+                        userData[i].cartProducts=[product];
+                    }else
+                    {
+                        userData[i].cartProducts.push(product);
+
+                    }
+                    alert("product added to cart")
+                    window.location.href='./Cart.html'
+                }
             }
-            console.log(finaldata, "finaldta here");
-            jwellerydiv.innerHTML = finaldata;
+            localStorage.setItem("FlipcartUsers",JSON.stringify(userData));
         }
-        function redirect(product) {
-            var singleProduct = JSON.stringify(product);
-            // alert("working");
-            localStorage.setItem("current-product", singleProduct);
-            window.location.href = './Single-Product.html'
-        }
+
         function logout() {
             alert("Logout successful.")
             localStorage.removeItem("FlipcartCurrentUser")
             window.location.reload()
+
+
         }
+
     </script>
-
+    
 </body>
-
 </html>
