@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/174a9c1444.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="multiplePro">
+        <div class="main-navbar-wrapper">
+            <div class="navbar">
+                <div class="left-navbar">
+                    <div class="logo-wrap">
+                        <div class="flipcart-txt-img">
+                            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                                alt="">
+                        </div>
+                        <div class="bottom-img-wrap">
+                            <span class="explore-txt">Explore</span>
+                            <span class="plus-txt">Plus</span>
+                            <span class="icon-img">
+                                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+                                    alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="search-wrap">
+                        <input type="text" placeholder="Search for products,brands and more">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                </div>
+
+                <div class="right-navbar">
+                    <div class="login-btn" id="switch" onclick="window.location.href='./register.html'">Login</div>
+                    <div class="become-seller">Become a Seller</div>
+                    <div class="more-wrap">
+                        <span class="more-sp">More</span>
+                        <span><i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                    <div class="cart-nav-wrap">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span>Cart</span>
+                    </div>
+                    <div id="logout"> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-navbar">
+            <div class="c-navbar-wrapper">
+                <div class="navLink-wrap">
+                    <span class="Nlink">Electronics</span>
+                    <span  class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div class="navLink-wrap">
+                    <span class="Nlink">TV & Appliences</span>
+                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div class="navLink-wrap">
+                    <span class="Nlink">Men</span>
+                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div class="navLink-wrap">
+                    <span class="Nlink">Women</span>
+                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div class="navLink-wrap">
+                    <span class="Nlink">Baby & Kids</span>
+                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div class="navLink-wrap">
+                    <span class="Nlink">Home & Furniture</span>
+                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div class="navLink-wrap">
+                    <span class="Nlink">Sports,Books & More</span>
+                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div class="navLink-wrap">
+                    <span class="Nlink">Flights</span>
+                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div class="navLink-wrap">
+                    <span class="Nlink">Offer Zone</span>
+                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div class="navLink-wrap">
+                    <span class="Nlink">Grocery</span>
+                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-wrapper" id="FproductWrapper">
+            <div class="Singleproduct">
+                <div class="product-image-wrapper">
+                   
+                </div>
+
+                <div class="product-info-wrapper">
+                    <div class="productBrandName"> </div>
+                    <div class="proname-fcart-assured">
+                        <div class="productName"> </div>
+                        <div class="f-assured-img-wrap">
+                            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="price-info-wrap">
+                        <span class="actual-p-price">₹ </span>
+                        <span class="strike-price">₹1,000</span>
+                        <span class="discount-txt">50% off</span>
+                    </div>
+                    <div class="product-size">Size : <span class="size-info"> XL, XXL, 3XL, 4XL</span></div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        window.onload = function () {
+            // alert("working")
+            var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()" class="logout-button-txt">Logout</button></span>'
+                var name = `<span>${currentUser.userName}</span>`;
+                divfromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+
+            }
+            //     else {
+            //        alert("current user absent")
+            //    }
+
+
+            var divToAppendAllProducts = document.getElementById("FproductWrapper")
+
+            var finalFlipkartMultiplePro = ""
+
+            var productsFromLS = JSON.parse(localStorage.getItem("FlipkartProducts"))
+
+            for (var i = 0; i < productsFromLS.length; i++) {
+
+                finalFlipkartMultiplePro += ` <div class="Singleproduct" onclick='redirect(${JSON.stringify(productsFromLS[i])})'>
+                <div class="product-image-wrapper">
+                   <img src='${productsFromLS[i].proImage}'>
+                </div>
+
+                <div class="product-info-wrapper">
+                    <div class="productBrandName">${productsFromLS[i].ProBrand} </div>
+                    <div class="proname-fcart-assured">
+                        <div class="productName">${productsFromLS[i].proName}</div>
+                        <div class="f-assured-img-wrap">
+                            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="price-info-wrap">
+                        <span class="actual-p-price">₹${productsFromLS[i].proPrice}</span>
+                        <span class="strike-price">₹1,000</span>
+                        <span class="discount-txt">50% off</span>
+                    </div>
+                    <div class="product-size">Size : <span class="size-info"> XL, XXL, 3XL, 4XL</span></div>
+                </div>
+
+
+
+            </div>`
+            }
+
+
+            divToAppendAllProducts.innerHTML = finalFlipkartMultiplePro;
+        }
+
+        function redirect(product) {
+            var singleProduct = JSON.stringify(product);
+            // console.log(s, " s here")
+            // alert("Working")
+            localStorage.setItem("FlipkartCurrentProduct", singleProduct);
+            window.location.href = './singleProduct-1.html'
+        }
+
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("FlipcartCurrentUser")
+            window.location.reload()
+
+
+        }
+    </script>
+
+    <script src="./server.js"></script>
+</body>
+
+</html>

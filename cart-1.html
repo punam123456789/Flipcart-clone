@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/174a9c1444.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="cartScreen">
+        <div class="main-navbar-wrapper">
+            <div class="navbar">
+                <div class="left-navbar">
+                    <div class="logo-wrap">
+                        <div class="flipcart-txt-img">
+                            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                                alt="">
+                        </div>
+                        <div class="bottom-img-wrap">
+                            <span class="explore-txt">Explore</span>
+                            <span class="plus-txt">Plus</span>
+                            <span class="icon-img">
+                                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+                                    alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="search-wrap">
+                        <input type="text" placeholder="Search for products,brands and more">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                </div>
+
+                <div class="right-navbar">
+                    <div class="login-btn" id="switch" onclick="window.location.href='./register.html'">Login</div>
+                    <div class="become-seller">Become a Seller</div>
+                    <div class="more-wrap">
+                        <span class="more-sp">More</span>
+                        <span><i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                    <div class="cart-nav-wrap">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span>Cart</span>
+                    </div>
+                    <div id="logout"> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-main-content-wrap">
+            <div class="left-side-cart-info">
+               
+                <p class="c-p-cl">
+                    <span class="selected-opt">Flipkart (3)</span>
+                    <span>Grocery</span>
+                </p>
+
+                <div class="location-wrap">
+                    <div class="sp">Deliver to : <span>Sangli - 416416</span></div>
+                    <div class="change-l">Change</div>
+                </div>
+
+                <div id="FlipkartFinalCart">
+                    <div class="c-product-info-container">
+                        <div class="image-qty-wrap">
+                            <div class="cart-img-image">
+                                <!-- <img src="https://rukminim1.flixcart.com/image/224/224/kflftzk0/top/9/f/j/xl-gr5693-pink-harpa-original-imafwysgrnswdqk6.jpeg?q=90"
+                                    alt=""> -->
+                            </div>
+                            <div class="add-r-wrap">
+                                <div class="change-i">-</div>
+                                <div class="o-qty">1</div>
+                                <div class="change-i">+</div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="cart-product-indormation">
+                            <div class="product-na-c">
+                               <span > </span>  <span></span>
+                            </div>
+
+                            <div class="size-p">M</div>
+                            <div class="seller-info-c"><span> Sheller-HSAtLastradeFashion</span>
+                                <span class="fa">
+                                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="">
+                                </span>
+                            </div>
+    
+                            <div class="pricecontainer-c">
+                                <div class="realprice-c">₹</div>
+                                <div class="linethroughPrice-c">₹1,199</div>
+                                <div class="discounttext-c">68% off</div>
+                            </div>
+    
+                            <div class="save-remove-wrap">
+                                <div class="sr-txt">SAVE FOR LATER</div>
+                                <div class="sr-txt">REMOVE</div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="deliver-info">
+                            <span class="d-c-info">Delivery by Thu May 18 | <span class="free">Free</span>  <span class="line-t">₹40</span></span>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+
+
+
+            <div class="rght-side-cst-info">
+                <div class="right-pr-content">
+
+                    <h2  class="p-heading">Price Details</h2>
+                    <div class="r-p-wrap">
+                        <span>Price (3 items )</span>
+                        <span>₹3,198</span>
+                    </div>
+                    <div class="r-p-wrap">
+                        <span >Discount</span>
+                        <span class="pr-co">− ₹2,397</span>
+                    </div>
+                    <div class="r-p-wrap">
+                        <span >Delivery Charges</span>
+                        <span  class="pr-co">Free</span>
+                    </div>
+                    <hr class="hrline">
+                    <div class="r-p-wrap">
+                        <span >Total amount</span>
+                        <span  class="">₹801</span>
+                    </div>
+                    <p class="l-sen">You will save ₹2,397 on this order</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- <div class="f-cart-container" id="FlipkartFinalCart">
+
+            <div class="Singleproduct">
+                <div class="product-image-wrapper">
+                    <div id="singleProductImage"></div>
+                </div>
+
+                <div class="product-info-wrapper">
+                    <div class="productBrandName" id="for-product-brand"> </div>
+                    <div class="proname-fcart-assured">
+                        <div class="productName" id="for-product-name"> </div>
+                        <div class="f-assured-img-wrap">
+                            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="price-info-wrap">
+                        <span class="actual-p-price" id="for-product-price">₹ </span>
+                        <span class="strike-price">₹1,000</span>
+                        <span class="discount-txt">50% off</span>
+                    </div>
+                    <div class="product-size">Size : <span class="size-info"> XL, XXL, 3XL, 4XL</span></div>
+
+                    <div class="addcartbtn" id="for-add-to-cart-btn"> </div>
+                </div>
+
+
+
+            </div>
+        </div> -->
+
+    </div>
+
+    <script>
+        window.onload = function () {
+            // alert("working")
+            var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()" class="logout-button-txt">Logout</button></span>'
+                var name = `<span>${currentUser.userName}</span>`;
+                divfromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+
+            }
+
+            var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"))
+            var userdata = JSON.parse(localStorage.getItem("FlipkartUsers"))
+
+            var divToAppendAllProducts = document.getElementById("FlipkartFinalCart")
+            var products;
+            for (var i = 0; i < userdata.length; i++) {
+                if (currentUser.userEmail == userdata[i].userEmail) {
+                    products = userdata[i].cartProducts
+                }
+            }
+
+            var finalProductCart = ""
+
+            for (var i = 0; i < products.length; i++) {
+
+                finalProductCart += `<div class="c-product-info-container">
+                        <div class="image-qty-wrap">
+                            <div class="cart-img-image">
+                                <img src="${products[i].proImage}">
+                            </div>
+                            <div class="add-r-wrap">
+                                <div class="change-i">-</div>
+                                <div class="o-qty">1</div>
+                                <div class="change-i">+</div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="cart-product-indormation">
+                            <div class="product-na-c">
+                                <span > ${products[i].ProBrand} </span>  <span>${products[i].proName} </span>
+                            </div>
+                            <div class="size-p">M</div>
+                            <div class="seller-info-c"><span> Sheller-HSAtLastradeFashion</span>
+                                <span class="fa">
+                                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="">
+                                </span>
+                            </div>
+    
+                            <div class="pricecontainer-c">
+                                <div class="realprice-c">₹${products[i].proPrice} </div>
+                                <div class="linethroughPrice-c">₹1,199</div>
+                                <div class="discounttext-c">68% off</div>
+                            </div>
+    
+                            <div class="save-remove-wrap">
+                                <div class="sr-txt">SAVE FOR LATER</div>
+                                <div class="sr-txt">REMOVE</div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="deliver-info">
+                            <span class="d-c-info">Delivery by Thu May 18 | <span class="free">Free</span>  <span class="line-t">₹40</span></span>
+                        </div>
+                    </div>`
+
+
+            }
+
+
+            divToAppendAllProducts.innerHTML = finalProductCart;
+        }
+
+
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("FlipcartCurrentUser")
+            window.location.reload()
+
+
+        }
+    </script>
+</body>
+
+</html>

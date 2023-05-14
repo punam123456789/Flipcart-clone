@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/174a9c1444.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h1>Seller Page</h1>
+    <form onsubmit="addProduct(event)">
+        <label>Brand Name</label><br />
+        <input type="text" id="brandname" /><br />
+        <label>Product Name</label><br />
+        <input type="text" id="pname" /><br />
+        <label>Product Price</label><br />
+        <input type="number" id="pprice" /><br />
+        <label>Product Image url</label><br />
+        <input type="text" id="pimage" /><br />
+        <input type="submit" /><br />
+    </form>
+
+
+    <script>
+        function addProduct(event) {
+            event.preventDefault();
+            // alert("Product adding....")
+            var proName = document.getElementById("pname").value;
+            var ProBrand = document.getElementById("brandname").value;
+            var proPrice = document.getElementById("pprice").value;
+            var proImage = document.getElementById("pimage").value;
+            var product = { proName, proPrice, proImage ,ProBrand};
+
+            var LS = JSON.parse(localStorage.getItem("FlipkartProducts")) || [];
+            LS.push(product);
+            localStorage.setItem("FlipkartProducts", JSON.stringify(LS));
+
+            alert("Product Added Successfully.")
+        }
+    </script>
+
+</body>
+
+</html>
