@@ -254,6 +254,197 @@ img{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+#product{
+    width:100%;
+    height:500px;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+   }
+   #left{
+    height: 380px;
+    width:49%;
+    /* border:1px solid black; */
+   }
+   #left>img{
+    height: 100%;
+    width:100%;
+
+   }
+   #cart{
+    height: 70px;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content:space-between ;
+   }
+   #cart>button{
+    width:45%;
+    border-radius: 10px;
+    
+    background-color: rgb(255,159,0);
+
+   }
+   #right{
+     height: 380px;
+    width:48%;
+    /* border:1px solid black; */
+
+   }
+   #right>h1{
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgb(68, 64, 64);
+   }
+   #right>p{
+    font-size: 17px;
+    margin-top: 10px;
+   }
+   #right>h3{
+    font-size: 23px;
+    color: rgb(37, 209, 37);
+   }
+
+   #singlePro{
+    width:24%;
+    height:300px;
+    /* border:1px solid grey; */
+    text-align: center;
+   }
+   #singlePro>img{
+    width: 100%;
+    height: 80%;
+
+   }
+   #body{
+    /* height: 550px; */
+    width: 100%;
+    /* border:1px solid red; */
+    margin-top: 20px;
+ }
+ #product{
+    /* height: 500px; */
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+
+ }
+ #left{
+    height: 100%;
+    width: 65%;
+    border:1px solid hsl(120, 30%, 96%);
+    margin-top: 20px;
+ }
+ #left>div:nth-child(1){
+    /* height: 50px; */
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    padding:10px;
+    padding-left: 20px;
+    color: rgb(40,116,240);
+    /* border:1px solid gainsboro; */
+    margin-top: 20px;
+ }
+ #left>div:nth-child(2){
+    /* height: 50px; */
+    border:1px solid #f8f8ff;
+     padding-left: 15px;
+     font-size: 18px;
+     color: rgb(88, 87, 87);
+     margin-top: 10px;
+ }
+ #cartleft{
+    width:100%;
+ }
+    #left1{
+        height: 150px;
+        width: 100%;
+        display: flex;
+        /* border:5px solid red ;  */
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #left1>div:nth-child(1){
+        height:100%;
+        width:25%;
+        margin-top: 20px;
+        /* border:1px solid red; */
+        
+    }
+    #left1>div:nth-child(1)>img{
+        width:100%;
+        height:100%;
+    }
+    #left1>div:nth-child(2){
+        height:100%;
+        width:50%;
+        /* border:1px solid red; */
+        
+    }
+    #left1>div:nth-child(2)>h3{
+        margin-top: 5px;
+        color: rgb(39, 37, 37);
+
+    }
+     #left1>div:nth-child(2)>p{
+        margin-top: 5px;
+        color: rgb(32, 30, 30);
+
+    }
+    #left1>div:nth-child(3){
+        height:100%;
+        width:15%;
+        /* border:1px solid red; */
+        
+    }
+     #left1>div:nth-child(3)>p{
+        margin-top: 15px;
+        color: rgb(32, 30, 30);
+        font-size: 18px;
+
+
+     }
+    
+
+
+ #right{
+    height: 100%;
+    width:30%;
+     border:1px solid rgb(233, 238, 233);
+     margin-top: 20px;
+
+ }
+ #right>h3{
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    /* border:1px solid gainsboro; */
+    
+ }
+ #right1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 10px;
+   
+ }
+ #right1>div>p{
+     margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+ }
+    
+     
+     
+     
 .footer{
  
     width: 100%;

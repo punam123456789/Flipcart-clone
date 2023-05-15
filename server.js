@@ -128,7 +128,7 @@ function login(event) {
     }
     if (flag == true) {
         localStorage.setItem("FlipcartCurrentUser", JSON.stringify(currentUser))
-        window.location.href='./home_page.html';
+        window.location.href='./home.html';
         alert("login successfull")
     }
     else {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="https://kit.fontawesome.com/4781840b9b.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -8,10 +9,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="./flipcart.css">
 </head>
+
 <body>
     <nav>
         <div class="logo">
-            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="">
+            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                alt="">
             <p>Flipcart <span>Plus</span></p>
 
         </div>
@@ -29,7 +32,7 @@
                 <p>More</p>
             </div>
             <div>
-                
+
                 <p>Add to Cart</p>
             </div>
 
@@ -59,75 +62,140 @@
     </ul>
 
     <!-- <img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/1176cec8a9974c97.jpg?q=50" alt=""> -->
-    <div class="Container">
-        <h1>Your cart</h1>
-        <div id="products"></div>
+    <div id="body">
+        <div id="product">
+            <div id="left">
+           
+                <div>
+                    <h1>Flipkart</h1>
+                    <h1>Grocery</h1>
+                </div>
+                <div>
+                    <h3>From Saved Address</h3>
 
-        <!-- <div class="card">
+                </div>
+                <div id="cartleft">
+                    <div id="left1">
+                        <div>
+                            <img src="" />
+                        </div>
+                        <div>
+                            <h3>Lenovo Q-Series 23.8 Inch Full HD IPS Panel with Tilt Support, TUV Eyesafe Vision Health Board Certified, 2X3W Inbuilt Speakers, Slim Monitor (Q24i-20)</h3>
+                           
+                          
+                        </div>
+                        <div>
+                            <!-- <p>Delivery in 7 days</p> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="right">
+                <h3>PRICE DETAILS</h3>
+                <div id="right1">
+                    <div>
+                        <p>Price</p>
+                        <p>Discount</p>
+                        <p>Delivery Charges</p>
+                        <h3>Total Amount</h3>
+                    </div>
+                    <div>
+                        <p>12000</p>
+                        <p>900</p>
+                        <p>free</p>
+                        <h3>12900</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+
+    <!-- <div class="card">
             <img src="" alt="">
             <p></p>
             <p></p>
 
         </div> -->
 
-      
-      
-        <script>
-            window.onload = function(){
-                 // alert("working")
-    
-                 var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"))
-                // console.log(currentUser,"current user");
-                if (!!currentUser) {
-                    // alert(currenUser,"username")
-                    var logoutDiv = document.getElementById("logout")
-                    var divfromHtml = document.getElementById("switch");
-                    // console.log(divfromHtml, "divfromhtml");
-                    // var h1=document.createElement("h1");
-                    // h1.innerText="Punam"
-                    // divfromHtml.append(h1)
-    
-                    var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()" class="logout-button-txt">Logout</button></span>'
-                    var name = `<div>${currentUser.userName}</div>`;
-                    divfromHtml.innerHTML = name;
-                    logoutDiv.innerHTML = button;
-                    // logoutDiv.innerHTML = icon
-                }
-                // else {
-                //     alert("current user absent")
-                // }
-    
-    
-    
-    
-                var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"));
-                var userData = JSON.parse(localStorage.getItem("FlipcartUsers"));
-                var divToAppendProducts = document.getElementById("products");
-                var products;
-                for(var i=0;i<userData.length;i++){
-                    if(currentUser.userEmail == userData[i].userEmail){
-                        products = userData[i].cartProducts;
-                        
-                    }
-    
-                }
-                console.log(products,"products here")
-                var finalData = ""
-                for(var i=0;i<products.length;i++){
-                    finalData +=  `<div><img src='${products[i].proImage}' /> <br/> <h1>${products[i].proName}</h1><br/> <p>${products[i].proPrice}</p></div>`
-                }
-                // console.log(finalData,"finalData");
-                divToAppendProducts.innerHTML = finalData;
+
+
+    <script>
+        window.onload = function () {
+            // alert("working")
+
+            var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Punam"
+                // divfromHtml.append(h1)
+
+                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()" class="logout-button-txt">Logout</button></span>'
+                var name = `<div>${currentUser.userName}</div>`;
+                divfromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+                // logoutDiv.innerHTML = icon
             }
-            function logout() {
-                alert("Logout successful.")
-                localStorage.removeItem("FlipcartCurrentUser")
-                window.location.reload()
-    
-    
+            // else {
+            //     alert("current user absent")
+            // }
+
+
+
+
+            var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"));
+            var userData = JSON.parse(localStorage.getItem("FlipcartUsers"));
+            var divToAppendProducts = document.getElementById("cartleft");
+            var products;
+            for (var i = 0; i < userData.length; i++) {
+                if (currentUser.userEmail == userData[i].userEmail) {
+                    products = userData[i].cartProducts;
+
+                }
+
             }
-    
-        </script>
-        
-    </body>
-    </html>
+            console.log(products, "products here")
+            var structure = ""
+            for (var i = 0; i < products.length; i++) {
+                structure+=`
+            <div id="left1">
+                            <div>
+                             <img src="${products[i].proImage}"/>
+                            </div>
+                            <div>
+                             <h3>${products[i].proName}</h3>
+                             <p>Monitor</p>
+                             <p>Rs.${products[i].proPrice}</p>
+                            </div>
+                            <div>
+                           
+                            </div>
+                         </div>`;
+         }
+
+         divToAppendProducts.innerHTML=structure;
+
+        }
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("FlipcartCurrentUser")
+            window.location.reload()
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

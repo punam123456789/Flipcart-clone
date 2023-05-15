@@ -2,283 +2,154 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/4781840b9b.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flipkart</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/174a9c1444.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./flipcart.css">
+    <title>Home Page</title>
+
 </head>
 
 <body>
-    <div id="singlPro-screen">
-        <div class="main-navbar-wrapper">
-            <div class="navbar">
-                <div class="left-navbar">
-                    <div class="logo-wrap">
-                        <div class="flipcart-txt-img">
-                            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
-                                alt="">
-                        </div>
-                        <div class="bottom-img-wrap">
-                            <span class="explore-txt">Explore</span>
-                            <span class="plus-txt">Plus</span>
-                            <span class="icon-img">
-                                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
-                                    alt="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="search-wrap">
-                        <input type="text" placeholder="Search for products,brands and more">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
+    <nav>
+        <div class="logo">
+            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                alt="">
+            <p>Flipcart <span>Plus</span></p>
 
-                </div>
-
-                <div class="right-navbar">
-                    <div class="login-btn" id="switch" onclick="window.location.href='./register.html'">Login</div>
-                    <div class="become-seller">Become a Seller</div>
-                    <div class="more-wrap">
-                        <span class="more-sp">More</span>
-                        <span><i class="fa-solid fa-angle-down"></i></span>
-                    </div>
-                    <div class="cart-nav-wrap">
-                        <span><i class="fa-solid fa-cart-shopping"></i></span>
-                        <span>Cart</span>
-                    </div>
-                    <div id="logout"> </div>
-                </div>
-            </div>
         </div>
+        <input type="text" placeholder="Search product & more.">
+        <i class="fa-solid fa-magnifying-glass"></i>
 
-        <div class="second-navbar">
-            <div class="c-navbar-wrapper">
-                <div class="navLink-wrap">
-                    <span class="Nlink">Electronics</span>
-                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                </div>
-                <div class="navLink-wrap">
-                    <span class="Nlink">TV & Appliences</span>
-                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                </div>
-                <div class="navLink-wrap">
-                    <span class="Nlink">Men</span>
-                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                </div>
-                <div class="navLink-wrap">
-                    <span class="Nlink">Women</span>
-                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                </div>
-                <div class="navLink-wrap">
-                    <span class="Nlink">Baby & Kids</span>
-                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                </div>
-                <div class="navLink-wrap">
-                    <span class="Nlink">Home & Furniture</span>
-                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                </div>
-                <div class="navLink-wrap">
-                    <span class="Nlink">Sports,Books & More</span>
-                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                </div>
-                <div class="navLink-wrap">
-                    <span class="Nlink">Flights</span>
-                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                </div>
-                <div class="navLink-wrap">
-                    <span class="Nlink">Offer Zone</span>
-                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                </div>
-                <div class="navLink-wrap">
-                    <span class="Nlink">Grocery</span>
-                    <span class="nav-arrow"><i class="fa-solid fa-angle-down"></i></span>
-                </div>
+
+        <div class="nav-info">
+            <div id="switch">
+                <p><small>ACCOUNT</small></p>
             </div>
-        </div>
+            <div>
+                <p>Become a seller</p>
+            </div>
+            <div>
+                <p>More</p>
+            </div>
+            <div>
 
-        <div class="singleProductInfoContainer">
-            <div class="leftSideSinglePro">
-
-                <div class="product-images-container">
-                    <div class="s-p-mini-img-wrap">
-                        <!-- <div class="s-product-mini-img">
-                            <img src="https://rukminim1.flixcart.com/image/128/128/kflftzk0/top/9/f/j/xl-gr5693-pink-harpa-original-imafwysgrnswdqk6.jpeg?q=70"
-                                alt="">
-                        </div>
-                        <div class="s-product-mini-img">
-                            <img src="https://rukminim1.flixcart.com/image/128/128/jw6pifk0/top/9/f/j/s-gr5693-pink-harpa-original-imafgwn36dn68syw.jpeg?q=70"
-                                alt="">
-                        </div> -->
-                    </div>
-
-                    <div class="highlight-img">
-                        <div id="singleProductImage"></div>
-                    </div>
-                </div>
-
-                <div class="addcart-buynow-btns">
-                    <div class="addCartButton">
-                        <span><i class="fa-solid fa-cart-shopping"></i></span>
-                        <span class="btntxt" id="for-add-to-cart-btn">Add To Cart</span>
-                    </div>
-
-                    <div class="buynowButton">
-                        <span> <i class="fa-solid fa-bolt-lightning"></i></span>
-                        <span class="btntxt">buy now</span>
-                    </div>
-
-
-                </div>
-
-
-
+                <p>Add to Cart</p>
             </div>
 
-            <div class="rightSideSinglePro">
 
-                <div class="path-share-wrap">
-                    <!-- <div class="path-wrap">
-                        <p>Home > Clothing & Accessories > Topwear > Tops > Women's Tops</p>
-                    </div> -->
-                    <!-- <div class="share-wrap">
-                        <span><i class="fa-solid fa-share"></i></span>
-                        <span>Share</span>
-                    </div> -->
-                </div>
 
-                <div class="pBrandName"  id="for-product-brand"> </div>
-                <div class="proName"  id="for-product-name"> </div>
-                <div class="pricecontainer">
-                    <div class="realprice" id="for-product-price">₹</div>
-                    <div class="linethroughPrice">₹1,199</div>
-                    <div class="discounttext">68% off</div>
-                </div>
 
-                <!-- <div class="rate-review-wrap">
-                    <div class="star-rate-wrap">
-                        <span>4</span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </div>
-                    <span class="rate-info">16,485 ratings and 1,703 reviews</span>
-                    <div class="assured-image">
-                        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
-                            alt="">
-                    </div>
 
-                </div>
 
-                <div class="color-product-wrap">
-                    <div class="colortxt">color</div>
-                    <div class="product-color-wrap">
-                        <div class="colorImage">
-                            <img src="https://rukminim1.flixcart.com/image/180/180/xif0q/top/b/j/j/l-gr5693-maroon-harpa-original-imafgwn3qytjrjgn-bb.jpeg?q=50"
-                                alt="">
-                        </div>
-                        <div class="colorImage">
-                            <img src="https://rukminim1.flixcart.com/image/180/180/kflftzk0/top/9/f/j/xl-gr5693-pink-harpa-original-imafwysgrnswdqk6.jpeg?q=50"
-                                alt="">
-                        </div>
-                        <div class="colorImage">
-                            <img src="https://rukminim1.flixcart.com/image/180/180/xif0q/top/k/f/c/m-gr5693-mustard-harpa-original-imafwyzanhguzxmt-bb.jpeg?q=50"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
 
-                <div class="sizewrapper">
-                    <div class="colortxt">size</div>
-                    <div class="sizenamewrap">
-                        <div class="sizename">S</div>
-                        <div class="sizename">m</div>
-                        <div class="sizename">l</div>
-                        <div class="sizename">xl</div>
-
-                    </div>
-                    <span class="sizechart-txt">Size Chart</span>
-                    <div class="chart-img-wrap">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOCIgaGVpZ2h0PSIxMiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiMyODc0RjAiIHN0cm9rZS13aWR0aD0iMS4zIj48cGF0aCBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0zNy4zNS42NUguNjV2MTAuN2gzNi43Vi42NXoiLz48cGF0aCBmaWxsPSIjODc4Nzg3IiBkPSJNNi42NSA4LjY1aDF2Mi43aC0xem00LTNIMTFsLS4zNS0uMzVWNWwtLjE1LjE1LS4xNS0uMTV2LjNsLS4zNS4zNWguMzV2NS43SDEwbC4zNS4zNXYuM2wuMTUtLjE1LjE1LjE1di0uM2wuMzUtLjM1aC0uMzV2LTUuN3ptNSAzSDE2bC0uMzUtLjM1VjhsLS4xNS4xNS0uMTUtLjE1di4zbC0uMzUuMzVoLjM1djIuN0gxNWwuMzUuMzV2LjNsLjE1LS4xNS4xNS4xNXYtLjNsLjM1LS4zNWgtLjM1di0yLjd6bTQtM2gxdjUuN2gtMXptNCAzaDF2Mi43aC0xem05IDBoMXYyLjdoLTF6bS00LTNoMXY1LjdoLTF6Ii8+PC9nPjwvc3ZnPg=="
-                            alt="">
-                    </div>
-
-                </div>
-
-                <div class="available-offers-wrap">
-                    <div class="av-line">
-                        <div class="av-icon">
-                            <img src="https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
-                                alt="">
-                        </div>
-                        <span class="sb-txt">Buy More, Save More</span>
-                        Buy worth ₹999-2000 save 10%; Buy worth ₹2001 save ₹200
-                        <span class="h-txt">See all products T&C</span>
-                    </div> -->
-                    <!-- <div class="av-line">
-                        <div class="av-icon">
-                            <img src="https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
-                                alt="">
-                        </div>
-                        <span class="sb-txt">Bank Offer</span>
-                        Flat ₹1250  Discount on HDFC Bank Credit Card EMI Transactions on orders of ₹15,000 and above
-                        <span class="h-txt"> T&C</span>
-                    </div>
-                    <div class="av-line">
-                        <div class="av-icon">
-                            <img src="https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
-                                alt="">
-                        </div>
-                        <span class="sb-txt">Bank Offer</span>
-                        5% Cashback on Flipkart Axis Bank Card
-                        <span class="h-txt">T&C</span>
-                    </div> -->
-                </div>
-
-                <!-- <p class="offer-txt">+4 more offers</p> -->
-
-            </div>
-
+            <div id="logout"></div>
         </div>
 
 
-
-
-        <!-- <div class="products-wrapper">
-            <div class="Singleproduct">
-                <div class="product-image-wrapper">
-                    <div id="singleProductImage"></div>
-                </div>
-
-                <div class="product-info-wrapper">
-                    <div class="productBrandName" id="for-product-brand"> </div>
-                    <div class="proname-fcart-assured">
-                        <div class="productName" id="for-product-name"> </div>
-                        <div class="f-assured-img-wrap">
-                            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="price-info-wrap">
-                        <span class="actual-p-price" id="for-product-price">₹ </span>
-                        <span class="strike-price">₹1,000</span>
-                        <span class="discount-txt">50% off</span>
-                    </div>
-                    <div class="product-size">Size : <span class="size-info"> XL, XXL, 3XL, 4XL</span></div>
-
-                    <div class="addcartbtn" id="for-add-to-cart-btn"> </div>
-                </div>
-
-
-
-            </div>
-        </div> -->
-
-
+    </nav>
+    <div class="nav2">
+        <div>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt="">
+            <p style="display: flex;">Geocery</p>
+        </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" alt="">
+            <p style="display: flex;">Mobile</p>
+        </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png?q=100" alt="">
+            <p style="display: flex;">Fashion<i class="fa-solid fa-chevron-down"></i></p>
+        </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+            <p style="display: flex;">Electronics<i class="fa-solid fa-chevron-down"></i></p>
+        </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" alt="">
+            <p style="display: flex;">Home<i class="fa-solid fa-chevron-down"></i></p>
+        </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" alt="">
+            <p style="display: flex;">Appliances<i class="fa-solid fa-chevron-down"></i></p>
+        </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" alt="">
+            <p style="display: flex;">Travel<i class="fa-solid fa-chevron-down"></i></p>
+        </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+            <p style="display: flex;">Top Offers<i class="fa-solid fa-chevron-down"></i></p>
+        </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" alt="">
+            <p style="display: flex;">Beauty, Toys</p>
+        </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/05d708653beff580.png?q=100" alt="">
+            <p style="display: flex;">Two Wheelers<i class="fa-solid fa-chevron-down"></i></p>
+        </div>
     </div>
 
+    <!-- <ul>
+        <li>
+            <a>Top Offers<i class="fa-solid fa-chevron-down"></i></a>
+            <a>Geocery<i class="fa-solid fa-chevron-down"></i></a>
+            <a>Womens<i class="fa-solid fa-chevron-down"></i></a>
+            <a>Mens<i class="fa-solid fa-chevron-down"></i></a>
+            <a>Electronics<i class="fa-solid fa-chevron-down"></i></a>
+            <a>Fashion<i class="fa-solid fa-chevron-down"></i></a>
+            <a>Home<i class="fa-solid fa-chevron-down"></i></a>
+            <a>Beauty<i class="fa-solid fa-chevron-down"></i></a>
+            <a>Appliences<i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+    </ul> -->
+
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/1176cec8a9974c97.jpg?q=50" alt="">
+
+
+    <div id="mainproduct">
+        <div id="product">
+            <div id="left">
+                <img src="" />
+                <div id="cart">
+                    <button><i class="fa-solid fa-bag-shopping"></i>ADD TO BAG</button>
+                    <button><i class="fa-regular fa-heart"></i>BUY NOW</button>
+                </div>
+            </div>
+            <div id="right">
+                <h1>Lenovo 23.8 inch Full HD VA Panel 3-Side Near Edgeless with TUV Eye Care Monitor (D24-20) </h1>
+
+                <!-- <p> (Finish Color - Deep Teal Delivery Condition - DIY(Do-It-Yourself))</p> -->
+
+                <p><b>4.2 <i class="fa-solid fa-star"></i></b>| 4.8k Ratings</p>
+
+                <p>₹19000 </p>
+                <h3>Coupons for you</h3>
+                <p>Partner Offer Buy</p>
+                <h3>Available Offers</h3>
+                <p>Special PriceGet extra ₹9410 off (price inclusive of cashback/coupon)T&C</p>
+                <p>Bank OfferFlat ₹1250 Discount on HDFC Bank Credit Card EMI Transactions on orders of ₹15,000 and
+                    aboveT&C
+                </p>
+                <p>100% Original Products</p>
+                <p>Pay on delivery might be available</p>
+                <p>Easy 10 days returns and exchanges</p>
+                <!-- <div id="">
+                    <h1>DELIVERY OPTIONS<i class="fa-solid fa-truck"></i></h1>
+                    <input placeholder="Enter pincode" />
+                    <p>Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+                    
+                </div> -->
+
+            </div>
+        </div>
+    </div>
 
     <script>
         window.onload = function () {
-            alert("working")
+            // alert("working")
             var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"))
             // console.log(currentUser,"current user");
             if (!!currentUser) {
@@ -287,62 +158,84 @@
                 var divfromHtml = document.getElementById("switch");
                 // console.log(divfromHtml, "divfromhtml");
                 // var h1=document.createElement("h1");
-                // h1.innerText="Mayuri"
+
                 // divfromHtml.append(h1)
+                // var button = '<button onclick="logout()">Logout</button>'
                 var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()" class="logout-button-txt">Logout</button></span>'
-                var name = `<span>${currentUser.userName}</span>`;
+                var name = `<h1>${currentUser.userName}</h1>`;
                 divfromHtml.innerHTML = name;
                 logoutDiv.innerHTML = button;
-
             }
-
-            var product = JSON.parse(localStorage.getItem("FlipkartCurrentProduct"));
-
-            var divToAppendProductImage = document.getElementById("singleProductImage");
-            var divToAppendProductBrand = document.getElementById("for-product-brand");
-            var divToAppendProductName = document.getElementById("for-product-name");
-            var divToAppendProductprice = document.getElementById("for-product-price");
-            var divToAppendAddtocart = document.getElementById("for-add-to-cart-btn")
+            //  else {
+            //     alert("current user absent")
+            // }
 
 
 
 
-            var structure = ` <img src='${product.proImage} ' />`
-            var productBrand = `${product.ProBrand} `
-            var productName = `${product.proName}`
-            var productprice = `${product.proPrice}`
-            var addtocart = ` <span onclick='addCart(${JSON.stringify(product)})' >Add to cart</span>`
 
-            divToAppendProductImage.innerHTML = structure;
-            divToAppendProductBrand.innerHTML = productBrand;
-            divToAppendProductName.innerHTML = productName;
-            divToAppendProductprice.innerHTML = productprice;
-            divToAppendAddtocart.innerHTML = addtocart;
 
+
+
+
+
+
+
+            var product = JSON.parse(localStorage.getItem("current-product"))
+            console.log(product);
+            var divappend = document.getElementById("mainproduct");
+            var structure = ` <div id="product">
+            <div id="left">
+                <img src="${product.proImage}"/>
+                <div id="cart">
+                    <button onclick='addCart(${JSON.stringify(product)})'><i class="fa-solid fa-bag-shopping"></i>ADD TO BAG</button>
+                    <button><i class="fa-regular fa-heart"></i>BUY NOW</button>
+                </div>
+            </div>
+            <div id="right">
+                <h1>${product.proName} </h1>
+
+              
+
+                <p><b>4.2 <i class="fa-solid fa-star"></i></b>| 4.8k Ratings</p>
+
+                <p>${product.proPrice}</p>
+                <h3>Coupons for you</h3>
+                <p>Partner Offer Buy</p>
+                <h3>Available Offers</h3>
+                <p>Special PriceGet extra ₹9410 off (price inclusive of cashback/coupon)T&C</p>
+                <p>Bank OfferFlat ₹1250 Discount on HDFC Bank Credit Card EMI Transactions on orders of ₹15,000 and aboveT&C
+                </p>
+                <p>100% Original Products</p>
+                <p>Pay on delivery might be available</p>
+                <p>Easy 10 days returns and exchanges</p>
+               
+               
+            </div>
+    </div>
+            `;
+            console.log(structure, "here");
+            divappend.innerHTML = structure;
         }
-
         function addCart(product) {
             alert("Adding to cart")
-            var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"))
-            // console.log(currentUser.userEmail);
-            var userdata = JSON.parse(localStorage.getItem("FlipkartUsers"));
-            for (var i = 0; i < userdata.length; i++) {
-                if (currentUser.userEmail == userdata[i].userEmail) {
-                    alert("got")    
-                    if (userdata[i].cartProducts === undefined) {
-                        // userdata[i].cartProducts = "hello"
-
-                        userdata[i].cartProducts = [product]
+            var currentUser = JSON.parse(localStorage.getItem("FlipcartCurrentUser"));
+            var userData = JSON.parse(localStorage.getItem("FlipcartUsers"));
+            var flagforUser = false;
+            for (var i = 0; i < userData.length; i++) {
+                if (currentUser.userEmail === userData[i].userEmail) {
+                    if (userData[i].cartProducts == undefined) {
+                        userData[i].cartProducts = [product];
                     } else {
-                        userdata[i].cartProducts.push(product);
+                        userData[i].cartProducts.push(product);
+
                     }
-                    alert("Product added to cart")
-                    window.location.href = "./cart-1.html"
+                    alert("product added to cart")
+                    window.location.href = './Cart.html'
                 }
             }
-            localStorage.setItem("FlipkartUsers", JSON.stringify(userdata))
+            localStorage.setItem("FlipcartUsers", JSON.stringify(userData));
         }
-
 
         function logout() {
             alert("Logout successful.")
@@ -351,6 +244,7 @@
 
 
         }
+
     </script>
 </body>
 
