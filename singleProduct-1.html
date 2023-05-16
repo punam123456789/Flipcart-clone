@@ -109,7 +109,7 @@
     <img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/1176cec8a9974c97.jpg?q=50" alt="">
 
 
-    <div id="mainproduct">
+    <div id="singleproduct">
         <div id="product">
             <div id="left">
                 <img src="" />
@@ -125,7 +125,7 @@
 
                 <p><b>4.2 <i class="fa-solid fa-star"></i></b>| 4.8k Ratings</p>
 
-                <p>₹19000 </p>
+                <p>₹</p>
                 <h3>Coupons for you</h3>
                 <p>Partner Offer Buy</p>
                 <h3>Available Offers</h3>
@@ -183,7 +183,7 @@
 
             var product = JSON.parse(localStorage.getItem("current-product"))
             console.log(product);
-            var divappend = document.getElementById("mainproduct");
+            var divappend = document.getElementById("singleproduct");
             var structure = ` <div id="product">
             <div id="left">
                 <img src="${product.proImage}"/>
@@ -194,21 +194,23 @@
             </div>
             <div id="right">
                 <h1>${product.proName} </h1>
+                <p>Monitor</p>
+            
 
               
 
                 <p><b>4.2 <i class="fa-solid fa-star"></i></b>| 4.8k Ratings</p>
 
                 <p>${product.proPrice}</p>
-                <h3>Coupons for you</h3>
+                <h3>Available offers/h3>
                 <p>Partner Offer Buy</p>
                 <h3>Available Offers</h3>
-                <p>Special PriceGet extra ₹9410 off (price inclusive of cashback/coupon)T&C</p>
-                <p>Bank OfferFlat ₹1250 Discount on HDFC Bank Credit Card EMI Transactions on orders of ₹15,000 and aboveT&C
-                </p>
-                <p>100% Original Products</p>
-                <p>Pay on delivery might be available</p>
-                <p>Easy 10 days returns and exchanges</p>
+                <p>Flat ₹1250  Discount on HDFC Bank Credit Card EMI Transactions on orders of ₹15,000 and above</p><br/>
+                <p>Bank Offer Flat ₹1250 Discount on HDFC Bank Credit Card EMI Transactions on orders of ₹15,000 and aboveT&C
+                </p><br/>
+                <p>Bank Offer Flat ₹4000  Discount on HDFC Bank Credit Card EMI Transactions on orders of ₹50,000 and above</p><br/>
+                <p>Bank Offer 10% off on IndusInd Bank Credit Card EMI Transactions, up to ₹1,500 on orders of ₹7,500 and above</p><br/>
+                <p>Bank OfferSign up for Flipkart Pay Later and get Flipkart Gift Card worth up to ₹500*</p>
                
                
             </div>
